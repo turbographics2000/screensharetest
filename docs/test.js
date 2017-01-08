@@ -7,7 +7,7 @@ btnScreenShare.onclick = _ => chrome.runtime.sendMessage('ophefhhmblpnpplgcaeihb
             }
         },
         audio: false
-    }, function(st) {
-        selfScreen.srcObject = st;
-    }, function(e) { console.error(e) })
+    }).then(stream => {
+        selfScreen.srcObject = stream;
+    }).catch(e => console.error(e));
 });
