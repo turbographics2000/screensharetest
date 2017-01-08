@@ -1,4 +1,4 @@
-btnScreenShare.onclick = _ => chrome.runtime.sendMessage(extId, ["screen", "window", "tab"], srcId => {
+btnScreenShare.onclick = _ => chrome.runtime.sendMessage('ophefhhmblpnpplgcaeihbobllolhpnl', ["screen", "window", "tab"], srcId => {
     navigator.mediaDevices.getUserMedia({
         video: {
             mandatory: {
