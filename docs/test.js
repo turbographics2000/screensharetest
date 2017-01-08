@@ -10,6 +10,5 @@ btnScreenShare.onclick = _ => chrome.runtime.sendMessage('ophefhhmblpnpplgcaeihb
     }, function(st) {
         selfTypes[st.id] = 'screen';
         selfScreen.srcObject = st;
-        pc.addTrack ? st.getTracks().map(trk => pc.addTrack(trk, st)) : pc.addStream(st);
     }, function(e) { console.error(e) })
 });
